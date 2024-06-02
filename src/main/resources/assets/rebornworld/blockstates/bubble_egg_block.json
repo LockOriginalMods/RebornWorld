@@ -1,0 +1,209 @@
+
+{
+  "variants": {
+    "eggs=1,hatch=0": [
+      {
+        "model": "rebornworld:block/bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=1,hatch=1": [
+      {
+        "model": "rebornworld:block/slightly_cracked_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/slightly_cracked_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/slightly_cracked_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/slightly_cracked_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=1,hatch=2": [
+      {
+        "model": "rebornworld:block/very_cracked_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/very_cracked_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/very_cracked_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/very_cracked_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=2,hatch=0": [
+      {
+        "model": "rebornworld:block/two_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/two_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/two_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/two_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=2,hatch=1": [
+      {
+        "model": "rebornworld:block/two_slightly_cracked_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/two_slightly_cracked_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/two_slightly_cracked_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/two_slightly_cracked_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=2,hatch=2": [
+      {
+        "model": "rebornworld:block/two_very_cracked_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/two_very_cracked_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/two_very_cracked_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/two_very_cracked_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=3,hatch=0": [
+      {
+        "model": "rebornworld:block/three_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/three_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/three_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/three_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=3,hatch=1": [
+      {
+        "model": "rebornworld:block/three_slightly_cracked_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/three_slightly_cracked_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/three_slightly_cracked_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/three_slightly_cracked_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=3,hatch=2": [
+      {
+        "model": "rebornworld:block/three_very_cracked_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/three_very_cracked_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/three_very_cracked_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/three_very_cracked_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=4,hatch=0": [
+      {
+        "model": "rebornworld:block/four_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/four_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/four_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/four_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=4,hatch=1": [
+      {
+        "model": "rebornworld:block/four_slightly_cracked_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/four_slightly_cracked_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/four_slightly_cracked_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/four_slightly_cracked_bubble_egg_block",
+        "y": 270
+      }
+    ],
+    "eggs=4,hatch=2": [
+      {
+        "model": "rebornworld:block/four_very_cracked_bubble_egg_block"
+      },
+      {
+        "model": "rebornworld:block/four_very_cracked_bubble_egg_block",
+        "y": 90
+      },
+      {
+        "model": "rebornworld:block/four_very_cracked_bubble_egg_block",
+        "y": 180
+      },
+      {
+        "model": "rebornworld:block/four_very_cracked_bubble_egg_block",
+        "y": 270
+      }
+    ]
+  }
+}
