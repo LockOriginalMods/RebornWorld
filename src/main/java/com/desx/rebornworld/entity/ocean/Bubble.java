@@ -74,8 +74,6 @@ import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.event.entity.living.LivingEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class Bubble extends Animal {
@@ -747,9 +745,7 @@ public class Bubble extends Animal {
 
     }
 
-    @SubscribeEvent
-    private boolean isSaddled() {
-        return this.isAlive() && !this.isBaby();
+    private boolean isSaddled() {  return this.isAlive() && !this.isBaby();
     }
 
     @Nullable
