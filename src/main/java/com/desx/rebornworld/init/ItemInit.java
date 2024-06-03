@@ -1,10 +1,14 @@
 package com.desx.rebornworld.init;
 
 import com.desx.rebornworld.entity.OceanEntities;
+import com.desx.rebornworld.item.shild.BubbleShild;
+import net.minecraft.client.model.ShieldModel;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ShieldItem;
 import net.minecraftforge.common.ForgeSpawnEggItem;
+import net.minecraftforge.event.entity.living.ShieldBlockEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,6 +28,9 @@ public class ItemInit {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> fishing_rod_of_sea = ITEMS.register("fishing_rod_of_sea",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BUBBLE_SHIELD = ITEMS.register( "bubble_shield",
+            () -> new BubbleShild( new Item.Properties().durability( 700 )).armor);
 
 
     public static void register(IEventBus eventBus){
