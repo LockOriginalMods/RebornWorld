@@ -754,7 +754,7 @@ public class Bubble extends Animal {
             Entity entity = this.getFirstPassenger();
             if (entity instanceof Player) {
                 Player player = (Player)entity;
-                if (player.getMainHandItem().is(Items.CARROT_ON_A_STICK) || player.getOffhandItem().is(Items.CARROT_ON_A_STICK)) {
+                if (player.getMainHandItem().is(ItemInit.fishing_rod_of_sea.get()) || player.getOffhandItem().is(ItemInit.fishing_rod_of_sea.get())) {
                     return player;
                 }
             }
@@ -800,14 +800,11 @@ public class Bubble extends Animal {
         super.tickRidden(p_278330_, p_278267_);
         this.setRot(p_278330_.getYRot(), p_278330_.getXRot() * 0.5F);
         this.yRotO = this.yBodyRot = this.yHeadRot = this.getYRot();
-
+ 
     }
 
     protected Vec3 getRiddenInput(Player p_278309_, Vec3 p_275479_) {
         return new Vec3(0.0, 0.0, 1.0);
 
     }
-
-
-
 }

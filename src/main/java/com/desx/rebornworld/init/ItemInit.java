@@ -22,6 +22,8 @@ public class ItemInit {
 
     public static final RegistryObject<Item> Bubble_Spike = ITEMS.register("bubble_spike",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> fishing_rod_of_sea = ITEMS.register("fishing_rod_of_sea",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){
