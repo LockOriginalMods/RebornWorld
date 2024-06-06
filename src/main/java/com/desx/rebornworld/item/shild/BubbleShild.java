@@ -1,28 +1,52 @@
 package com.desx.rebornworld.item.shild;
 
+import com.google.common.collect.ImmutableMap;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.random.WeightedEntry;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageSources;
+import net.minecraft.world.damagesource.DamageType;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.EnchantmentInstance;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.living.ShieldBlockEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import javax.annotation.Nullable;
+import javax.annotation.concurrent.Immutable;
 import java.util.List;
+import java.util.Map;
 
-public class BubbleShild extends Item implements Equipable {
+import static net.minecraft.world.item.enchantment.Enchantments.*;
+
+public class BubbleShild extends ShieldItem {
     public static final int EFFECTIVE_BLOCK_DELAY = 5;
     public static final float MINIMUM_DURABILITY_DAMAGE = 3.0F;
     public static final String TAG_BASE_COLOR = "Base";
 
-    public BubbleShild(Item.Properties p_43089_) {
+    private final Enchantment enchantment; // Добавляем параметр для хранения зачарования
+
+    public BubbleShild(Item.Properties p_43089_, Enchantment enchantment) {
         super(p_43089_);
+        this.enchantment = enchantment;
         DispenserBlock.registerBehavior(this, ArmorItem.DISPENSE_ITEM_BEHAVIOR);
     }
 
@@ -37,6 +61,8 @@ public class BubbleShild extends Item implements Equipable {
     public UseAnim getUseAnimation(ItemStack p_43105_) {
         return UseAnim.BLOCK;
     }
+
+
 
     public int getUseDuration(ItemStack p_43107_) {
         return 72000;
@@ -64,4 +90,13 @@ public class BubbleShild extends Item implements Equipable {
     public EquipmentSlot getEquipmentSlot() {
         return EquipmentSlot.OFFHAND;
     }
+
+    @Override
+    public void onCraftedBy(ItemStack itemStack, Level level, Player player) {
+        super.onCraftedBy(itemStack, level, player);
+        if (enchantment != null) {
+            itemStack.enchant(enchantment, 1);
+        }
+    }
+
 }

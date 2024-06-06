@@ -7,6 +7,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShieldItem;
+import net.minecraft.world.item.enchantment.EnchantmentInstance;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.event.entity.living.ShieldBlockEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,7 +32,7 @@ public class ItemInit {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> BUBBLE_SHIELD = ITEMS.register( "bubble_shield",
-            () -> new BubbleShild( new Item.Properties().durability( 700 )).armor);
+            () -> new BubbleShild( new Item.Properties( ).durability( 700 ),Enchantments.THORNS));
 
 
     public static void register(IEventBus eventBus){
