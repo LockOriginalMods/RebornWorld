@@ -4,5 +4,6 @@
   "item.rebornworld.bubble_spike": "Turtle bubble spike",
   "item.rebornworld.fishing_rod_of_sea": "Fishing rod of seagrass",
   "item.rebornworld.bubble_shield": "Turtle bubble shield",
-  "block.rebornworld.turtle_egg": "Turtle bubble egg"
+  "block.rebornworld.turtle_egg": "Turtle bubble egg",
+  "creativetab.ocean_tab": "OceanReborn"
 }
