@@ -1,5 +1,6 @@
 package com.desx.rebornworld.entity.ocean;
 
+import com.desx.rebornworld.init.BlockInit;
 import com.desx.rebornworld.init.ItemInit;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -23,6 +24,7 @@ public class OceanCreativeModTabs {
                         pOutput.accept(ItemInit.Bubble_Turtle_Shield.get());
                         pOutput.accept(ItemInit.fishing_rod_of_sea.get());
                         pOutput.accept(ItemInit.BUBBLE_SHIELD.get());
+                        pOutput.accept( BlockInit.BUBBLE_EGG_BLOCK.get());
 
 
                     })
